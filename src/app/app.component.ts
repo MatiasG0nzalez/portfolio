@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-portfolio';
+  
+
+  active: boolean = false;
+
+
+
+  sizeUp(): void {
+
+    this.active = true;
+    console.log("entro");
+    
+  
+  }
+  
+  
+  sizeDown(): void {
+  
+    this.active = false;
+    console.log("salio");
+    
+  
+  }
+  
 }
