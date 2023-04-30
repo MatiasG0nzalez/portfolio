@@ -1,16 +1,14 @@
 
 
-<div class="background w-full h-full absolute " >
+<div class="w-full min-h-[100vh]">
+    <div class="w-[180px] h-[100vh] fixed left-0   ">
+       <app-navbar> </app-navbar>
+    </div>
+    
+    <div class="h-auto ml-[180px] p-3 flex justify-center ">
+        <div class="w-full h-[200vh] bg-violet-900">
+            <app-banner> </app-banner>
+        </div>
 
-
-<app-mouse [class.aumentar]="active"></app-mouse>
-
-<app-header> </app-header>
-
-<div class="p-2 flex">
-    <app-navbar></app-navbar>
+    </div>
 </div>
-
-
-</div>
-

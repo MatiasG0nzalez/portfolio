@@ -7,26 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-
-  active: boolean = false;
-
-
-
-  sizeUp(): void {
-
-    this.active = true;
-    console.log("entro");
-    
-  
-  }
-  
-  
-  sizeDown(): void {
-  
-    this.active = false;
-    console.log("salio");
-    
-  
-  }
   
 }
