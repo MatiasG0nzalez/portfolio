@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+*{ box-sizing: border-box;}
+/**Typeo CSS End**/	
+.marquee-list {
+	font-family: Poppins;
+  border-bottom: #a4a8a7 1px solid;  
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0px;
+  padding:10px 0px;
+}
+.marquee-list ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-animation: marquee 30s linear infinite running;
+  -moz-animation: marquee 30s linear infinite running;
+  -o-animation: marquee 30s linear infinite running;
+  -ms-animation: marquee 30s linear infinite running;
+  animation: marquee 30s linear infinite running;
+  margin: 0px;
+  gap: 1rem;
+}
+.marquee-list ul:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.marquee-list li {
+  min-width: 150px;
+  white-space: nowrap;
+  text-align: center;  
+  padding:0 10px;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+@-moz-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translate(-20%);
+    -moz-transform: translate(-20%);
+    -o-transform: translate(-20%);
+    -ms-transform: translate(-20%);
+    transform: translate(-20%);
+  }
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translate(-20%);
+    -moz-transform: translate(-20%);
+    -o-transform: translate(-20%);
+    -ms-transform: translate(-20%);
+    transform: translate(-20%);
+  }
+}
+@-o-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translate(-20%);
+    -moz-transform: translate(-20%);
+    -o-transform: translate(-20%);
+    -ms-transform: translate(-20%);
+    transform: translate(-20%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  
+  100% {
+    -webkit-transform: translate(-20%);
+    -moz-transform: translate(-20%);
+    -o-transform: translate(-20%);
+    -ms-transform: translate(-20%);
+    transform: translate(-20%);
+  }
+}

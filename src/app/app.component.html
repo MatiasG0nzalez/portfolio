@@ -1,14 +1,20 @@
 
 
-<div class="w-full min-h-[100vh]">
-    <div class="w-[180px] h-[100vh] fixed left-0   ">
+<div class="w-full min-h-[100vh]" (mousemove)="cursor($event)">
+
+    <app-cursor [cursorY]="cursorY" [cursorX]="cursorX"> </app-cursor>
+
        <app-navbar> </app-navbar>
-    </div>
+
     
-    <div class="h-auto ml-[180px] p-3 flex justify-center ">
-        <div class="w-full h-[200vh] bg-violet-900">
-            <app-banner> </app-banner>
+    <div class="h-auto lg:ml-[180px] lg:p-3 flex justify-center z-1 ">
+        <div class="w-full min-h-[200vh] p-2 md:p-0 ">
+
+           <app-home></app-home>
+
         </div>
 
     </div>
+
+
 </div>
